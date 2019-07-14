@@ -20,10 +20,11 @@
 
 
 
-
+//Add it to the DOM 
 const cardsEntry = document.querySelector('.cards-container');
 let topicArray;
 
+//get request
 axios.get('https://lambda-times-backend.herokuapp.com/articles')
     .then(response => {
         topicArray = Object.keys(response.data.articles);
@@ -35,6 +36,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
     })
 
 Card = (object, className) => {
+    //build the elements
     const card = document.createElement('div');
     const headline = document.createElement('div');
     const author = document.createElement('div');
@@ -42,6 +44,7 @@ Card = (object, className) => {
     const img = document.createElement('img');
     const name = document.createElement('span');
 
+    //assign the given classes and img sources
     card.classList.add('card');
     card.classList.add(className);
     headline.classList.add('headline');
@@ -49,9 +52,11 @@ Card = (object, className) => {
     imgContainer.classList.add('img-container');
     img.src = object.authorPhoto;
 
+    //add text content
     headline.textContent = object.headline;
     name.textContent = `By: ${object.authorName}`;
 
+    //Assemble!
     imgContainer.appendChild(img);
     author.appendChild(imgContainer);
     author.appendChild(name);
@@ -60,3 +65,4 @@ Card = (object, className) => {
 
     return card;
 }
+
