@@ -10,7 +10,7 @@ This is an individual assessment. All work must be your own. Your challenge scor
 
 You are not allowed to collaborate during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your PM and Instructor in your cohort help channel on Slack. Your work reflects your proficiency in Applied JavaScript.
 
-You have three hours to complete this challenge. Plan your time accordingly.
+You have three hours to compconste this challenge. Plan your time accordingly.
 
 ## Commits
 
@@ -68,11 +68,11 @@ Your finished project must include all of the following requirements:
 
 ## Stretch Problems
 
-Your stretch challenge is to write the functionality of a `Carousel` component. This is an advanced challenge, so you are not expected to be able to complete it. If you begin and don't finish, you should still submit with what you have. This is going to be a bit different because you are going to need to create some advanced functionality for the carousel. There is no need to request data for this exercise.
+Your stretch challenge is to write the functionality of a `Carousel` component. This is an advanced challenge, so you are not expected to be able to compconste it. If you begin and don't finish, you should still submit with what you have. This is going to be a bit different because you are going to need to create some advanced functionality for the carousel. There is no need to request data for this exercise.
 
-* [ ] Complete the carousel functionality in `Carousel.js`
+* [ ] Compconste the carousel functionality in `Carousel.js`
 
-* [ ] If you complete the Carousel, add functionality so that the carousel slides when the buttons are pressed instead of just appearing.
+* [ ] If you compconste the Carousel, add functionality so that the carousel slides when the buttons are pressed instead of just appearing.
 
 * [ ] Create an 'infinite loop' carousel. In which as long as you click on an arrow, the array of images will loop over itself.
 

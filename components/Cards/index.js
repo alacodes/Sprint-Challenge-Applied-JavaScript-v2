@@ -21,7 +21,7 @@
 
 
 
-let cardsEntry = document.querySelector('.cards-container');
+const cardsEntry = document.querySelector('.cards-container');
 let topicArray;
 
 axios.get('https://lambda-times-backend.herokuapp.com/articles')
@@ -35,10 +35,28 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
     })
 
 Card = (object, className) => {
-    let card = document.createElement('div');
-    let headline = document.createElement('div');
-    let author = document.createElement('div');
-    let imgContainer = document.createElement('div');
-    let img = document.createElement('img');
-    
+    const card = document.createElement('div');
+    const headline = document.createElement('div');
+    const author = document.createElement('div');
+    const imgContainer = document.createElement('div');
+    const img = document.createElement('img');
+    const name = document.createElement('span');
+
+    card.classList.add('card');
+    card.classList.add(className);
+    headline.classList.add('headline');
+    author.classList.add('author');
+    imgContainer.classList.add('img-container');
+    img.src = object.authorPhoto;
+
+    headline.textContent = object.headline;
+    name.textContent = `By: ${object.authorName}`;
+
+    imgContainer.appendChild(img);
+    author.appendChild(imgContainer);
+    author.appendChild(name);
+    card.appendChild(headline);
+    card.appendChild(author);
+
+    return card;
 }
